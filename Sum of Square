@@ -1,0 +1,9 @@
+function sumofSquare(a,b,k){
+  if(a*a + b*b === k){
+    console.log("true");
+  }
+  else{
+    console.log("false");
+  }
+}
+sumofSquare(3,4,7)
