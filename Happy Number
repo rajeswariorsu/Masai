@@ -1,0 +1,22 @@
+function isHappyNumber(n) {
+    while (n !== 1 ) {
+        n = getSumOfSquares(n); // Get the sum of the squares of its digits
+    }
+
+    return n === 1; // If the process ends in 1, return true (happy number); otherwise, false (unhappy number)
+}
+
+function getSumOfSquares(num) {
+    let sum = 0;
+    
+    while (num > 0) {
+        let digit = num % 10; 
+        sum += digit * digit; 
+        num = Math.floor(num / 10); 
+    }
+    
+    return sum; 
+}
+
+console.log(isHappyNumber(19)); // Output: true
+console.log(isHappyNumber(2));  // Output: false
