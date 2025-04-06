@@ -1,0 +1,27 @@
+function userRoleMessage(){
+  
+  let user = {name: "Alice", role: "admin", active: false};
+  let role = user[role];
+  let name= user[name];
+  let active = user[active]
+  
+  if(role=== "admin" && active === true ){
+    console.log("Admin Access Granted");
+  }
+  else if (role=== "admin" && active === false ){
+    console.log("Admin Access Revoked");
+  }
+  else if (role=== "user" && active === true ){
+    console.log("User Access  Granted");
+  }
+  else if (role=== "user" && active === false ){
+    console.log("User Access Revoked ");
+  }
+  else{
+    console.log("User Access Denied ");
+  }
+  
+}
+
+userRoleMessage()
+
