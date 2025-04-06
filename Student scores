@@ -1,0 +1,34 @@
+function StudentGrades(){
+  let studentScores = {
+    John: 85,
+    Emma: 92,
+    Sam: 67,
+    Bob: 45
+  };
+  for(let key in studentScores ){
+    let values =studentScores[key]
+    if(values>=90){
+      console.log("A");
+    }
+    else if (values>=80 && values<90){
+      console.log("B");
+      
+    }
+    else if (values>=70 && values<80){
+      console.log("C");
+      
+    }
+    else if (values>=60 && values<70){
+      console.log("D");
+      
+      
+    }
+    else{
+      console.log("F");
+      
+    }
+    
+  }
+  
+}
+StudentGrades()
