@@ -1,0 +1,14 @@
+function typeCoercion(){
+  let numValue = 47;
+  let stringValue = "42";
+  let value = numValue + stringValue;
+  console.log("The value is: ",value);
+  if(value > 100){
+    console.log("The result is greater than 100");
+  }
+  else{
+    console.log("The result is less than or equal to 100");
+    
+  }
+}
+typeCoercion();
