@@ -1,0 +1,7 @@
+function StringConcatenation(){
+  let firstName = "Rajeswari";
+  let lastName = "Orsu";
+  let fullName = firstName +" "+ lastName;
+  return fullName;
+}
+console.log(StringConcatenation());
