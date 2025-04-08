@@ -1,0 +1,15 @@
+function pyramid(N){
+  let str = "";
+  for(let i = 1; i <= N ; i++){
+    if( i % 3 === 0){
+      continue;
+    }
+    if( i % 7 === 0){
+      break;
+    }
+    str = str + " " + i;
+    console.log(str);
+    
+  }
+}
+pyramid(9);
