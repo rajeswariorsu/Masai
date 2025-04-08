@@ -1,0 +1,17 @@
+function pyramidBreakandContinue(N){
+  let str = "";
+  for(let i = 1 ; i <= N ; i++){
+    if(i % 3 === 0){
+      continue;
+    }
+    else if(i % 7 === 0){
+      continue;
+      
+    }
+    str = str + i + " ";
+    console.log(str)
+  }
+ 
+  
+}
+pyramidBreakandContinue(5)
