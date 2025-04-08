@@ -1,0 +1,10 @@
+function Pattern(N){
+  let str = "";
+  for(let i = 0 ; i < N ; i++){
+    str = str + "*";
+    console.log(str)
+  }
+ 
+  
+}
+Pattern(5)
