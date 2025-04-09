@@ -1,0 +1,153 @@
+// const tasks = ["task1", "task2", "task3", "task4", "task5"];
+
+
+// // Difference const/let/var;
+
+// function removeFirstTask(arr){
+  
+//     const duplicateArr = [];
+//     for(let i = 1; i<arr.length; i++){
+//         duplicateArr.push(arr[i]);
+//     }
+    
+//     return duplicateArr;
+  
+// }
+
+// // function addNewTasks(arr, inputs){
+  
+// //     var a = 10;
+  
+// // }
+// // addNewTasks(arr,["n no. of tasks"]);
+
+// // if(true){
+// //   var a = 10;
+// // }
+// // addNewTasks(arr,["n no. of tasks"]);
+// // function addNewTasks(arr, inputs){
+  
+// //     let a = 10;
+  
+// // }
+
+// // let a;
+// // if(true){
+// //   a = 10;
+// // }
+
+// const a = 10;
+
+// a = 5;
+// // console.log(a);
+
+
+
+
+// // var =>  Functional Scope
+// // let =>  Block Scope
+// // const => Block Scope & Fixed value;
+
+
+// function checkLowerCase(ch){
+//   let alphs = "abcdefghijklmnopqrstuvwxyz";
+  
+//   for(let i = 0; i<26; i++){
+//     if(alphs[i] == ch){
+//       return true;
+//     }
+//   }
+  
+//   return false;
+  
+// }
+
+// function checkUpperCase(ch){
+//   let alphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  
+//   for(let i = 0; i<26; i++){
+//     if(alphs[i] == ch){
+//       return true;
+//     }
+//   }
+  
+//   return false;
+  
+// }
+
+// function checkSpecialChar(ch){
+//   let alphs = "*#@!";
+  
+//   for(let i = 0; i<alphs.length; i++){
+//     if(alphs[i] == ch){
+//       return true;
+//     }
+//   }
+  
+//   return false;
+// }
+
+// function checkNumber(ch){
+//   let nums = "1234567890";
+  
+//   for(let i = 0; i<10; i++){
+//     if(nums[i] == ch){
+//       return true;
+//     }
+//   }
+  
+//   return false;
+// }
+
+// let flag1,flag2,flag3,flag4 = false;
+
+// let str = "ABCD";
+
+// for(let i = 0; i<str.length; i++){
+//   if(checkLowerCase(str[i])){
+//     flag1 = true;
+//   }
+//   else if(checkUpperCase(str[i])){
+//     flag2 = true;
+//   }
+//   else if(checkSpecialChar(str[i])){
+//     flag3 = true;
+//   }
+//   else{
+//   flag4 = true;
+//   }
+// }
+
+// console.log(str.charCodeAt(0));
+
+// if(flag1 == true && flag2 == true && flag3 == true && flag4 == true){
+//   console.log("True");
+// }
+// else{
+//   console.log("False");
+// }
+
+
+
+
+// ASCII => special value assigned to them in CS;
+
+
+let chars = "abcdefghijklmnopqrstuvwxyz";
+
+let obj = {};
+let n = 30;
+
+for(let i = 0; i<26; i++){
+  obj[chars[i]] = n++;
+}
+
+let str = "abc";
+let sum = 0;
+for(let i = 0; i<str.length; i++){
+  sum += obj[str[i]];
+}
+
+console.log(obj);
+console.log(sum);
+
