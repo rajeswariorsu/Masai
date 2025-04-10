@@ -1,0 +1,14 @@
+let obj = {
+  firstName : "Raju",
+  lastName : "Orsu",
+  phone : 9966778899,
+  subject : "English",
+  Hobby : "cricket"
+}
+// for(let keysTest in obj ){
+//   console.log(obj[keysTest])
+// }
+for(let keysTest in obj ){
+   console.log(obj.keysTest)
+  
+}
