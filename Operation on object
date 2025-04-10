@@ -1,0 +1,20 @@
+let obj = {
+  firstName : "Raju",
+  lastName : "Orsu",
+  phone : 9966778899,
+  subject : "English",
+  Hobby : "cricket"
+}
+console.log(obj) //object before no operation is performed
+console.log(obj.firstName); //Acessing firstName using dot notation
+console.log(obj["lastName"]);//Acessing firstName using square notation
+obj.Marks = 89; //Declaring new key marks and assigned it 89 
+console.log(obj.Marks) // dot notation
+obj.class = "A";//Declaring new key class and assigned it A
+console.log(obj["class"])//square notation
+delete obj.subject;//deleting subject using dot notation
+console.log(obj)
+delete obj["Hobby"]//deleting hobby using square notation
+console.log(obj)
+obj.lastName = "Ram"//updated lastname with ram
+console.log(obj) //the object after all operations
