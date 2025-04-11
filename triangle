@@ -1,0 +1,11 @@
+function triangle(N){
+  
+  for(let row = 1 ; row <= N ; row++){
+    let str = "";
+    for(let num = 1 ; num <= row ; num++){
+      str = str + num + " ";
+    }
+    console.log(str)
+  }
+}
+triangle(5)
