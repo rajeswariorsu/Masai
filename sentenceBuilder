@@ -1,0 +1,21 @@
+function sentenceBuilder(){
+  let obj = {};
+  subject: "The cat",
+  verb : "is running",
+  object: "on the roof",
+  buildSentence: function(){
+    if(subject && verb && object){
+    return this.subject + this.verb + this.object; 
+    }
+    else{
+      return "Incomplete sentence"
+    }
+  }
+  updateProperty : function(property, value){
+    return this.subject + this.verb + this.object;
+    }
+    return "Invalid property"
+  }
+  
+}
+sentenceBuilder.buildSentence();
