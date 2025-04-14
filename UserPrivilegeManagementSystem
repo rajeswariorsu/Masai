@@ -1,48 +1,48 @@
 function UserPrivilegeManagementSystem (){
   let person = { role: "user", experience: 2, active: true, department: "Support" };
-  if(person["role"] == "admin" && (person["active"] == true && (person["experience"] >= 5 && person["department"] == "IT"){
+  if(person["role"] == "admin" && person["active"] == true && person["experience"] >= 5 && person["department"] == "IT"){
     console.log("Full IT Admin Access")
   }
-  else if(person["role"] == "admin" && person["active"] == true && experience >= 5 && department != "IT"){
+  else if(person["role"] == "admin" && person["active"] == true && person["experience"] >= 5 && person["department"] != "IT"){
     console.log("Full General Admin Access")
     
   }
-  else if(role == "admin" && active == true && experience < 5){
+  else if(person["role"] == "admin" && person["active"] == true && person["experience"] < 5){
     console.log("Limited Admin Access")
     
     
   }
-  else if(role == "admin" && active == fale){
+  else if(person["role"] == "admin" && person["active"] == fale){
     console.log("Admin Access Revoked")
   }
-  else if(role == "manager" && active == true && experience >= 3 && department == "Sales"){
+  else if(person["role"] == "manager" && person["active"] == true && person["experience"] >= 3 && person["department"] == "Sales"){
     console.log("Full Sales Manager Access")
   }
-  else if(role == "manager" && active == true && experience >= 3 && department != "Sales"){
+  else if(person["role"] == "manager" && person["active"] == true && person["experience"] >= 3 && person["department"] != "Sales"){
     console.log("Full Manager Access")
     
   }
-  else if(role == "manager" && active == true && experience < 3){
+  else if(person["role"] == "manager" && person["active"] == true && person["experience"] < 3){
     console.log("Limited Manager Access")
     
     
   }
-  else if(role == "manager" && active == fale){
+  else if(person["role"] == "manager" && person["active"] == fale){
     console.log("Manager Access Revoked")
   }
-  else if(role == "user" && active == true && department == "Support"){
+  else if(person["role"] == "user" && person["active"] == true && person["department"] == "Support"){
     console.log("Priority Support Access")
   }
-  else if(role == "user" && active == true && department != "Support"){
+  else if(person["role"] == "user" && person["active"] == true && person["department"] != "Support"){
     console.log("User Access")
     
   }
   
-  else if(role == "user" && active == fale){
+  else if(person["role"] == "user" && person["active"] == fale){
     console.log("User Access Revoked")
   }
   else{
     console.log("Invalide Role")
   }
 }
-UserPrivilegeManagementSystem ()
+UserPrivilegeManagementSystem()
